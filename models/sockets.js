@@ -11,7 +11,7 @@
 
             socket.on('msg-to-srvr',( data )=>{
                 console.log( data );                
-                socket.emit('msg-from-srvr', data);
+                this.io.emit('msg-from-srvr', data);
             });
          });
 
